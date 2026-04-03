@@ -1,6 +1,27 @@
+import { useState } from "react";
 import styles from "./App.module.css";
+import OrderForm from "./components/OrderForm";
 
 export default function App() {
+  const [order, setOrder] = useState({
+    id: `LC-${Math.floor(Math.random() * 10000)}-SNG`,
+    date: "September 24, 2024",
+    type: "Standard Delivery",
+    sender: { name: "", address: "", city: "", pincode: "" },
+    receiver: { name: "", address: "", city: "", pincode: "" },
+    packages: [
+      {
+        id: Date.now(),
+        weight: "",
+        length: "",
+        width: "",
+        height: "",
+        value: "",
+      },
+    ],
+    fragile: false,
+    insured: false,
+  });
   return (
     <div className={styles.layout}>
       <main>
@@ -11,15 +32,7 @@ export default function App() {
           </p>
         </header>
 
-        <div
-          style={{
-            padding: "2rem",
-            backgroundColor: "#f2f4f6",
-            borderRadius: "8px",
-          }}
-        >
-          [Form Placeholder]
-        </div>
+        <OrderForm order={order} setOrder={setOrder} />
       </main>
 
       <aside>
@@ -31,7 +44,7 @@ export default function App() {
             borderRadius: "8px",
           }}
         >
-          [Manifest Placeholder]
+          [Manifest Preview loading...]
         </div>
       </aside>
     </div>
