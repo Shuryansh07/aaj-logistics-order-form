@@ -1,10 +1,9 @@
 .layout {
   display: grid;
-  grid-template-columns: 1fr 420px;
+  grid-template-columns: minmax(500px, 850px) 420px;
   gap: 4rem;
-  max-width: 1300px;
-  margin: 4rem auto;
-  padding: 0 2rem;
+  justify-content: center;
+  padding: 4rem 2rem;
   align-items: start;
 }
 
