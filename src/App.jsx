@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./App.module.css";
 import OrderForm from "./components/OrderForm";
+import LivePreview from "./components/LivePreview";
 
 export default function App() {
   const [order, setOrder] = useState({
@@ -36,16 +37,9 @@ export default function App() {
       </main>
 
       <aside>
-        <div
-          style={{
-            padding: "2rem",
-            backgroundColor: "#000",
-            color: "#fff",
-            borderRadius: "8px",
-          }}
-        >
-          [Manifest Preview loading...]
-        </div>
+        <aside>
+          <LivePreview order={order} />
+        </aside>
       </aside>
     </div>
   );

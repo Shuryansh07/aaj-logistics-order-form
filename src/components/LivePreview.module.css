@@ -1,0 +1,157 @@
+.previewContainer {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 12px 32px rgba(25, 28, 30, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerDark {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 2rem;
+}
+
+.headerLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #a1a1aa;
+  margin-bottom: 0.5rem;
+}
+
+.orderIdWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orderId {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.deliveryBadge {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+
+.content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.dateSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(198, 198, 205, 0.15);
+  padding-bottom: 1.5rem;
+}
+
+.valueLarge {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #191c1e;
+}
+
+.routeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  border-bottom: 1px solid rgba(198, 198, 205, 0.15);
+  padding-bottom: 1.5rem;
+}
+
+.addressText {
+  font-size: 0.875rem;
+  color: #45464d;
+  line-height: 1.5;
+  margin-top: 0.25rem;
+}
+
+.itemListGrid {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr 2fr;
+  gap: 1rem;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.itemHeader {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #45464d;
+  margin-bottom: 1rem;
+}
+
+.badgeGroup {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.badgeFragile {
+  background-color: #fee2e2;
+  color: #dc2626;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badgeInsured {
+  background-color: #00201d;
+  color: #0c9488;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.totalsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #f7f9fb;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid rgba(198, 198, 205, 0.15);
+}
+
+.totalLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #45464d;
+  margin-bottom: 0.5rem;
+}
+
+.totalValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.totalValueTeal {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0c9488;
+}
+
+.finalizeBtn {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
