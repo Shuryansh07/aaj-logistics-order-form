@@ -126,6 +126,8 @@
 }
 
 .checkbox {
+  appearance: auto;
+  -webkit-appearance: checkbox;
   width: 1.25rem;
   height: 1.25rem;
   cursor: pointer;
