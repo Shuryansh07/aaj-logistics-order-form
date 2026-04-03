@@ -1,0 +1,32 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 4rem;
+  max-width: 1300px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  align-items: start;
+}
+
+.pageHeader {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #45464d;
+  font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
